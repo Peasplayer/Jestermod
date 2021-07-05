@@ -1,4 +1,4 @@
-﻿using BepInEx;
+using BepInEx;
 using BepInEx.IL2CPP;
 using Essentials.Options;
 using HarmonyLib;
@@ -11,6 +11,7 @@ namespace Jester
     [BepInPlugin(Id)]
     [BepInProcess("Among Us.exe")]
     [BepInDependency(ReactorPlugin.Id)]
+    [BepInDependency(PeasApi.Id)]
     public class JesterPlugin : BasePlugin
     {
         public const string Id = "me.change.please";
