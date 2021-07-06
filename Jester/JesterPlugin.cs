@@ -5,6 +5,7 @@ using HarmonyLib;
 using PeasAPI;
 using PeasAPI.Components;
 using Reactor;
+using UnityEngine;
 
 namespace Jester
 {
@@ -14,7 +15,7 @@ namespace Jester
     [BepInDependency(PeasApi.Id)]
     public class JesterPlugin : BasePlugin
     {
-        public const string Id = "me.change.please";
+        public const string Id = "tk.peasplayer.amongus.jester";
 
         public Harmony Harmony { get; } = new Harmony(Id);
 
@@ -22,8 +23,12 @@ namespace Jester
 
         public override void Load()
         {
-            Watermark.PingText = "Jestermod by Peasplayer";
-            Watermark.VersionText = "Jestermod by Peasplayer";
+            Watermark.PingText = "\nJestermod by Peasplayer";
+            Watermark.PingTextOffset = new Vector3(-0.6f, -0f, 0f);
+            Watermark.VersionText = "\nJestermod by Peasplayer";
+            Watermark.VersionTextOffset = new Vector3(0f, -0.4f, 0f);
+            
+            PeasApi.AccountTabOffset = new Vector3(0f, -0.5f, 0f);
 
             CustomServerManager.RegisterServer("Peaspowered", "au.peasplayer.tk", 22023);
 
