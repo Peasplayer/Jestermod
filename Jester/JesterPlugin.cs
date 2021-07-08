@@ -26,7 +26,7 @@ namespace Jester
             Watermark.PingText = "\nJestermod by Peasplayer";
             Watermark.PingTextOffset = new Vector3(-0.6f, -0f, 0f);
             Watermark.VersionText = "\nJestermod by Peasplayer";
-            Watermark.VersionTextOffset = new Vector3(0f, -0.4f, 0f);
+            Watermark.VersionTextOffset = new Vector3(0f, -0.41f, 0f);
             
             PeasApi.AccountTabOffset = new Vector3(0f, -0.5f, 0f);
 
